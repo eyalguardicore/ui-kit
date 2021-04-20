@@ -1,0 +1,21 @@
+<button class="raw" #target (click)="togglePopover()">
+  <span *ngIf="!popoverRef">open me</span>
+  <span *ngIf="popoverRef">close me</span>
+</button>
+
+<button class="tooltip" uikitTooltip="Hi! I'm a tooltip. I'm so special!">
+  hover over me
+</button>
+
+<button class="dropdown" [uikitDropdown]="dropdownTemplate" [dropdownConfig]="{autoClose: 'outside'}">
+  Click to drop
+</button>
+<ng-template #dropdownTemplate>
+  <ul>
+    <li>item01</li>
+    <li>item02</li>
+    <li>item03</li>
+    <li>item04</li>
+    <li>item05</li>
+  </ul>
+</ng-template>

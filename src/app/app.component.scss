@@ -1,0 +1,24 @@
+.raw {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+}
+.tooltip {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+}
+.dropdown {
+  position: absolute;
+  left: 200px;
+  top: 250px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    line-height: 1.5rem;
+  }
+}

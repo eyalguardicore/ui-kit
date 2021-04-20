@@ -1,0 +1,15 @@
+<div
+  *ngIf="content"
+  class="tooltip"
+  [@fade]="animationState"
+  (@fade.start)="onAnimationStart($event)"
+  (@fade.done)="onAnimationDone($event)"
+>
+  <div class="panel">
+    <div class="content">
+      <ng-container *ngTemplateOutlet="isTemplate ? content : tmpText"></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #tmpText>{{ content }}</ng-template>

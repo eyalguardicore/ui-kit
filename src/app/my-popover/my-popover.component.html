@@ -1,0 +1,7 @@
+<div class="content"
+  [@fade]="animationState"
+  (@fade.start)="onAnimationStart($event)"
+  (@fade.done)="onAnimationDone($event)"
+>
+  {{ content }}
+</div>

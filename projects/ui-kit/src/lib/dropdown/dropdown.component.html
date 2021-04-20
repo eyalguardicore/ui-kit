@@ -1,0 +1,13 @@
+<div
+  class="uikit-popover uikit-dropdown"
+  (click)="fireClose()"
+  [@fade]="animationState"
+  (@fade.start)="onAnimationStart($event)"
+  (@fade.done)="onAnimationDone($event)"
+>
+  <div class="container">
+    <div class="content">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+  </div>
+</div>
